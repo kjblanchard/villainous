@@ -9,18 +9,41 @@ import SwiftUI
 
 struct RandomizerMain: View {
     @EnvironmentObject var modelData: ModelData
+    @State private var enabledExpansions: String = ""
+    @State private var numPlayers = 0
+    
+    @State private var filteredLandmarks: [Landmark] = []
+    func updateFilteredLandmarks()
+    {
+        filteredLandmarks = modelData.landmarks.filter { landmark in
+            (enabledExpansions.contains(landmark.category))
+        
+    }
+        
+    }
     var body: some View {
         List {
-            Menu("Expansions") {
+            Menu("Expansions Enabled") {
+                ForEach (Expansions.allCases, id: \.rawValue ) {expansion in
+                    ExpansionFilter(expansion: expansion, allExpansions: $enabledExpansions)
+                }
                 
             }
-            
-            ForEach(filterByExpansion(fullModel: modelData)) { character in
-                Text("Hello world \(character.name)")
-                
+            HStack {
+                Text("Number of players")
+                TextField("Enter Number of players", value: $numPlayers, format: .number)
+                    .textFieldStyle(.roundedBorder)
+                    .padding()
+            }
+            ForEach (filteredLandmarks) { landmark in
+                Text(landmark.name)
             }
         }
         .navigationTitle("Randomizer")
+        .onChange(of: enabledExpansions) { value in
+            updateFilteredLandmarks()
+            
+        }
         
     }
     

@@ -1,7 +1,7 @@
 [
     {
         "name": "Queen of Hearts",
-        "category": "base",
+        "category": "wicked",
         "city": "wut",
         "state": "Disney",
         "id": 1001,
@@ -17,7 +17,7 @@
     },
     {
         "name": "Jafar",
-        "category": "Lakes",
+        "category": "prepared",
         "city": "Port Alsworth",
         "state": "Alaska",
         "id": 1002,
@@ -33,7 +33,7 @@
     },
     {
         "name": "Maleficent",
-        "category": "Mountains",
+        "category": "wicked",
         "city": "Skagway",
         "state": "Alaska",
         "id": 1003,
@@ -49,7 +49,7 @@
     },
     {
         "name": "Prince John",
-        "category": "Lakes",
+        "category": "Wicked",
         "city": "Browning",
         "state": "Montana",
         "id": 1004,
@@ -65,7 +65,7 @@
     },
     {
         "name": "Captain Hook",
-        "category": "Lakes",
+        "category": "Wicked",
         "city": "Twin Lakes",
         "state": "Alaska",
         "id": 1005,
@@ -81,7 +81,7 @@
     },
     {
         "name": "Ursula",
-        "category": "Mountains",
+        "category": "Wicked",
         "city": "West Glacier",
         "state": "Montana",
         "id": 1006,

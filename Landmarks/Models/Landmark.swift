@@ -3,7 +3,7 @@
 //  Landmarks
 //
 //  Created by Kevin Blanchard on 12/21/22.
-//
+///Users/kevin/git/swift/Landmarks/Landmarks/Resources/landmarkData.json
 
 import Foundation
 import SwiftUI
@@ -19,6 +19,8 @@ struct Landmark: Hashable, Codable, Identifiable {
     var park: String
     var state: String
     var description: String
+    var isFavorite: Bool
+    var category: String
     private var imageName: String
 //    This is a computed property, it creates an Image based on the imageName property
     var image: Image {

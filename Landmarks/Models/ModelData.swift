@@ -6,9 +6,14 @@
 //
 
 import Foundation
+import Combine
+
+//This class will watch this object.  By making it published, we then write the changes from the state to it, to save things between sessions.
+final class ModelData: ObservableObject {
+    @Published var landmarks: [Landmark] = load("landmarkData.json")
+}
 
 //Array of landmarks, which we are loading from a json file, we can reference this in other files, kind of global?
-var landmarks: [Landmark] = load("landmarkData.json")
 
 //Notice that it takes in a type, and it needs to be decodable.  It also returns a type T when it is done
 //Only takes in a string for the filename to load.

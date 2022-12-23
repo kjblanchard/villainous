@@ -8,9 +8,11 @@
 import Foundation
 import Combine
 
-//This class will watch this object.  By making it published, we then write the changes from the state to it, to save things between sessions.
 final class ModelData: ObservableObject {
+//This class will watch this object.  By making it published, we then write the changes from the state to it, to save things between sessions.
     @Published var landmarks: [Landmark] = load("landmarkData.json")
+//    We are loading this file using the model, but we are not going to modify the data after loading it, so it will not be published.
+    var hikes: [Hike] = load("hikeData.json")
 }
 
 //Array of landmarks, which we are loading from a json file, we can reference this in other files, kind of global?

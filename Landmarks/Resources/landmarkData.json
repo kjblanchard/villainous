@@ -17,7 +17,7 @@
     },
     {
         "name": "Jafar",
-        "category": "prepared",
+        "category": "wicked",
         "city": "Port Alsworth",
         "state": "Alaska",
         "id": 1002,
@@ -49,7 +49,7 @@
     },
     {
         "name": "Prince John",
-        "category": "Wicked",
+        "category": "wicked",
         "city": "Browning",
         "state": "Montana",
         "id": 1004,
@@ -65,7 +65,7 @@
     },
     {
         "name": "Captain Hook",
-        "category": "Wicked",
+        "category": "wicked",
         "city": "Twin Lakes",
         "state": "Alaska",
         "id": 1005,
@@ -81,7 +81,7 @@
     },
     {
         "name": "Ursula",
-        "category": "Wicked",
+        "category": "wicked",
         "city": "West Glacier",
         "state": "Montana",
         "id": 1006,
@@ -94,5 +94,149 @@
         },
         "description": "Red head swims around, then looses voice.",
         "imageName": "ursula"
-    }
+    },
+    {
+        "name": "Ratigan",
+        "category": "prepared",
+        "city": "Twin Lakes",
+        "state": "Alaska",
+        "id": 1005,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "Peter Pan",
+        "coordinates": {
+            "longitude": -153.849883,
+            "latitude": 60.641684
+        },
+        "description": "Tinkerbell",
+        "imageName": "ch"
+    },
+    {
+        "name": "Scar",
+        "category": "prepared",
+        "city": "Twin Lakes",
+        "state": "Alaska",
+        "id": 1005,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "Peter Pan",
+        "coordinates": {
+            "longitude": -153.849883,
+            "latitude": 60.641684
+        },
+        "description": "Tinkerbell",
+        "imageName": "ch"
+    },
+    {
+        "name": "Yzma",
+        "category": "prepared",
+        "city": "Twin Lakes",
+        "state": "Alaska",
+        "id": 1005,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "Peter Pan",
+        "coordinates": {
+            "longitude": -153.849883,
+            "latitude": 60.641684
+        },
+        "description": "Tinkerbell",
+        "imageName": "ch"
+    },
+    {
+        "name": "Mother Gothel",
+        "category": "wretched",
+        "city": "Twin Lakes",
+        "state": "Alaska",
+        "id": 1005,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "Peter Pan",
+        "coordinates": {
+            "longitude": -153.849883,
+            "latitude": 60.641684
+        },
+        "description": "Tinkerbell",
+        "imageName": "ch"
+    },
+    {
+        "name": "Cruella de Vil",
+        "category": "wretched",
+        "city": "Twin Lakes",
+        "state": "Alaska",
+        "id": 1005,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "Peter Pan",
+        "coordinates": {
+            "longitude": -153.849883,
+            "latitude": 60.641684
+        },
+        "description": "Tinkerbell",
+        "imageName": "ch"
+    },
+    {
+        "name": "Pete",
+        "category": "wretched",
+        "city": "Twin Lakes",
+        "state": "Alaska",
+        "id": 1005,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "Peter Pan",
+        "coordinates": {
+            "longitude": -153.849883,
+            "latitude": 60.641684
+        },
+        "description": "Tinkerbell",
+        "imageName": "ch"
+    },
+    {
+        "name": "Syndrome",
+        "category": "bigger",
+        "city": "Twin Lakes",
+        "state": "Alaska",
+        "id": 1005,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "Peter Pan",
+        "coordinates": {
+            "longitude": -153.849883,
+            "latitude": 60.641684
+        },
+        "description": "Tinkerbell",
+        "imageName": "ch"
+    },
+    {
+        "name": "Lotso",
+        "category": "bigger",
+        "city": "Twin Lakes",
+        "state": "Alaska",
+        "id": 1005,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "Peter Pan",
+        "coordinates": {
+            "longitude": -153.849883,
+            "latitude": 60.641684
+        },
+        "description": "Tinkerbell",
+        "imageName": "ch"
+    },
+    {
+        "name": "Madam Mim",
+        "category": "bigger",
+        "city": "Twin Lakes",
+        "state": "Alaska",
+        "id": 1005,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "Peter Pan",
+        "coordinates": {
+            "longitude": -153.849883,
+            "latitude": 60.641684
+        },
+        "description": "Tinkerbell",
+        "imageName": "ch"
+    },
 ]

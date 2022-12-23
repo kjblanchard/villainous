@@ -10,7 +10,9 @@ import SwiftUI
 struct RandomizerMain: View {
     @EnvironmentObject var modelData: ModelData
     @State private var enabledExpansions: String = ""
-    @State private var numPlayers = 0
+    @State private var numPlayers = 1
+    @State private var randomChoice = ""
+    @State var counter = 0
     
     @State private var filteredLandmarks: [Landmark] = []
     func updateFilteredLandmarks()
@@ -35,6 +37,12 @@ struct RandomizerMain: View {
                     .textFieldStyle(.roundedBorder)
                     .padding()
             }
+            Button("Randomizer!") {
+                randomNames()
+            }
+            .buttonStyle(.borderedProminent)
+            Text("Random choice is \(randomChoice) ")
+                .font(.title)
             ForEach (filteredLandmarks) { landmark in
                 Text(landmark.name)
             }
@@ -47,11 +55,14 @@ struct RandomizerMain: View {
         
     }
     
-    func filterByExpansion(fullModel: ModelData) -> [Landmark] {
-        let marks = modelData.landmarks.filter {
-            $0.category == "base"
+    func randomNames() {
+        randomChoice = ""
+        let shuffledBois = filteredLandmarks.shuffled().prefix(numPlayers)
+        for character in shuffledBois {
+            randomChoice.append("\(character.name) ")
+            
         }
-        return marks
+                
     }
 }
 
